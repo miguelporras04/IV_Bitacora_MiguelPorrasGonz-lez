@@ -71,6 +71,18 @@ Por último, hacer este análisis antes de ponerse a instalar cosas tiene mucho 
 
 <img width="1186" height="430" alt="image" src="https://github.com/user-attachments/assets/32d6e66a-b215-46b8-b1da-eb1809325593" />
 
+## 3. Estrategia de Despliegue y Comunicación
+
+### 3.1. Sistema de Transferencia de Ficheros y Despliegue en Producción
+
+Para trasladar el código fuente desde el entorno de desarrollo local hacia el servidor de producción, se ha descartado por completo el uso de FTP tradicional debido a que transmite las credenciales y los datos en texto plano, lo que expone el sistema a ataques de intercepción (man-in-the-middle).
+En su lugar, utilizaremos SFTP (SSH File Transfer Protocol) integrado dentro de un flujo de Integración y Despliegue Continuos (CI/CD). Esta solución es óptima y segura porque opera sobre el protocolo SSH (puerto 22), lo que garantiza que todo el tráfico de datos, archivos y contraseñas viaje de extremo a extremo cifrado mediante algoritmos robustos (como AES). Además, la autenticación en el servidor no se realizará mediante contraseñas vulnerables, sino a través de pares de claves criptográficas públicas/privadas (RSA o Ed25519) almacenadas como secretos protegidos en nuestro repositorio, asegurando un despliegue automatizado, hermético y libre de manipulaciones externas.
+
+### 3.2. Gestión de Incidencias y Mensajería en el Equipo
+
+Para la monitorización del sistema y la comunicación del equipo, utilizaremos Slack centralizado como eje de operaciones. Esta herramienta se integrará mediante webhooks con nuestro servidor y servicios de monitorización. En caso de que el servidor sufra una caída o se detecte un error crítico en producción, el sistema disparará una alerta automática inmediata a un canal exclusivo de incidencias. Esto garantizará que el equipo de soporte técnico reciba la notificación en tiempo real tanto en PC como en móviles, permitiendo una coordinación rápida, el registro de la incidencia y la reducción al mínimo del tiempo de inactividad (downtime).
+
+---
 
 **Referencia académica para tu texto**. Según la ingeniería de software, un buen análisis de requisitos evita fallos críticos en la producción.
  Drake, J. M. (2008). *Análisis de requisitos y especificación de una aplicación* [en línea]. Universidad de Cantabria. Disponible en: https://www.ctr.unican.es/asignaturas/ingenieria_software_4_f/doc/m3_08_especificacion-2011.pdf
