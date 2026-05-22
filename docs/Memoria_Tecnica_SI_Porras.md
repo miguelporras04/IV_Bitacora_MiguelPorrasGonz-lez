@@ -69,6 +69,22 @@ Por último, hacer este análisis antes de ponerse a instalar cosas tiene mucho 
 
 # Sprint 2: Infraestructura Cloud, Transferencia de Ficheros y El Investigador
 
+### 1. ¿En qué se va el dinero? (221,60€ Netos)
+   
+Servidores (57%): 127,20€ para mantener las máquinas encendidas (2 en Google Cloud para producción y 1 en AWS para pruebas).
+
+Red y Tráfico (25%): 54,40€ por los datos que salen de tus servidores a internet. Ojo aquí, es un pellizco importante.
+
+Almacenamiento (18%): 40,00€ para la base de datos (Google Cloud) y las copias de seguridad (DigitalOcean).
+
+### 2. Los Totales
+
+Base: 221,60€ (Lo que cobran las nubes).
+
+Con IVA: 268,14€ (Lo que sale de tu banco).
+
+Con Beneficio: 335,17€ (Lo que le cobras al cliente). Has metido un 25% de margen, perfecto para cubrir imprevistos o picos de tráfico sin perder dinero.
+
 <img width="1186" height="430" alt="image" src="https://github.com/user-attachments/assets/32d6e66a-b215-46b8-b1da-eb1809325593" />
 
 ## 3. Estrategia de Despliegue y Comunicación
