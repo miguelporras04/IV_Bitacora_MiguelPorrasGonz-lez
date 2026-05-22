@@ -69,6 +69,9 @@ Por último, hacer este análisis antes de ponerse a instalar cosas tiene mucho 
 
 # Sprint 2: Infraestructura Cloud, Transferencia de Ficheros y El Investigador
 
+<img width="1186" height="430" alt="image" src="https://github.com/user-attachments/assets/32d6e66a-b215-46b8-b1da-eb1809325593" />
+
+
 **Referencia académica para tu texto**. Según la ingeniería de software, un buen análisis de requisitos evita fallos críticos en la producción.
  Drake, J. M. (2008). *Análisis de requisitos y especificación de una aplicación* [en línea]. Universidad de Cantabria. Disponible en: https://www.ctr.unican.es/asignaturas/ingenieria_software_4_f/doc/m3_08_especificacion-2011.pdf
 
