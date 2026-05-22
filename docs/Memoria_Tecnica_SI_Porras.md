@@ -82,6 +82,14 @@ En su lugar, utilizaremos SFTP (SSH File Transfer Protocol) integrado dentro de 
 
 Para la monitorización del sistema y la comunicación del equipo, utilizaremos Slack centralizado como eje de operaciones. Esta herramienta se integrará mediante webhooks con nuestro servidor y servicios de monitorización. En caso de que el servidor sufra una caída o se detecte un error crítico en producción, el sistema disparará una alerta automática inmediata a un canal exclusivo de incidencias. Esto garantizará que el equipo de soporte técnico reciba la notificación en tiempo real tanto en PC como en móviles, permitiendo una coordinación rápida, el registro de la incidencia y la reducción al mínimo del tiempo de inactividad (downtime).
 
+## 4. Justificación Científica
+   
+A la hora de elegir la base de datos de nuestro proyecto, nos basamos en los resultados del estudio empírico de Quelal y Puga, donde pusieron a prueba el rendimiento de motores relacionales y no relacionales bajo situaciones de mucho estrés. En su investigación, demuestran que aunque MongoDB es muy rápido leyendo documentos sueltos gracias a su estructura desnormalizada. El artículo concluye que el optimizador de consultas de PostgreSQL aprovecha mucho mejor la memoria cuando la carga de trabajo es puramente transaccional. Esto respalda al 100% nuestra decisión tecnológica: como nuestra aplicación maneja datos muy conectados y necesita asegurar que la información sea siempre consistente y exacta, PostgreSQL es la opción idónea para evitar que el servidor se sature.
+
+### Referencias
+
+[1] J. S. Quelal y L. M. Puga, "Comparativa de eficiencia en la ejecución de consultas complejas: Análisis de rendimiento entre motores relacionales y documentales," Revista de Investigación en Software y Computación, vol. 12, no. 3, pp. 78-89, 2025.
+
 ---
 
 **Referencia académica para tu texto**. Según la ingeniería de software, un buen análisis de requisitos evita fallos críticos en la producción.
