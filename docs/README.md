@@ -67,7 +67,8 @@ Otra ventaja es que si el servidor se rompe o hay que cambiarlo, levantar todo d
 
 Por último, hacer este análisis antes de ponerse a instalar cosas tiene mucho sentido. Si no sabes qué problema vas a resolver ni por qué, es fácil acabar montando algo que no sirve o que da más problemas de los que resuelve. Según García Notario (2015), saltarse esta fase es uno de los motivos más habituales por los que los proyectos de informática fallan.
 
----
+Sprint 2: Infraestructura Cloud, Transferencia de Ficheros y El Investigador
+
 
 **Referencia académica para tu texto**. Según la ingeniería de software, un buen análisis de requisitos evita fallos críticos en la producción.
  Drake, J. M. (2008). *Análisis de requisitos y especificación de una aplicación* [en línea]. Universidad de Cantabria. Disponible en: https://www.ctr.unican.es/asignaturas/ingenieria_software_4_f/doc/m3_08_especificacion-2011.pdf
